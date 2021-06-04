@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+</head>
+<body>
+
+    <p th:text="${user}" />
+
+    <form th:action="@{/newUser}" th:object="${user}" method="get" >
+        <div><label> Jak sie nazywasz? : <input type="text" name="name" th:field="*{name}" /> </label></div>
+        <div> <input type="submit" value="submit" /> </div>
+
+    </form>
+
+</body>
+</html>
