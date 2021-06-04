@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<header th:fragment="header">
+
+    <h1>Spring project</h1>
+    <nav>
+        <ul id="topnav">
+            <li><a th:href="@{/info}">O stronie</a></li>
+            <li><a th:href="@{/user}">Użytkownicy</a></li>
+            <li><a th:href="@{/cart}">x</a></li>
+            <li><a th:href="@{/history}">x</a></li>
+            <li><a th:href="@{/total}">x</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+</body>
+</html>

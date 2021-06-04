@@ -1,0 +1,177 @@
+nav ul {
+    background-color: #8A2BE2;
+    list-style-type: none;
+    height: 40px;
+    width: 800px;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul a {
+    padding-right: 16px;
+    padding-left: 16px;
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+nav ul a:hover {
+    background-color: #6D0101;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#main {
+    width: 800px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.empty {
+    background: #ddd;
+}
+
+.complete {
+    background-color: #00dd00;
+}
+
+.incomplete {
+    background-color: #ffff00;
+}
+
+.complete-incomplete {
+    background-color: pink;
+}
+
+.remove-from-cart-form {
+    display: inline;
+}
+
+input[type=number] {
+    width: 40px;
+}
+
+.error {
+    color: red;
+}
+
+.rtable {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.rtable-cell {
+    box-sizing: border-box;
+    flex-grow: 1;
+    overflow: hidden;
+    list-style: none;
+    border: solid 3px white;
+    width: 15%;
+    padding: 5px;
+}
+
+.rtable-cell.product-name {
+    width: 40%;
+}
+
+.vertical-header {
+    display: none;
+}
+
+nav .icon {
+    display: none;
+}
+
+@media all and (max-width: 600px) {
+    .rtable {
+        display: block;
+        margin: 0 0 2em 0;
+        border: 2px solid black;
+    }
+
+    .rtable-cell {
+        width: 100% !important;
+    }
+
+    nav ul {
+        height: auto;
+        width: auto;
+        overflow: hidden;
+    }
+
+    #main {
+        width: auto;
+    }
+
+    .vertical-header {
+        display: block;
+        font-weight: bold;
+        background-color: #BBB;
+    }
+
+    .header {
+        display: none;
+    }
+
+
+    nav ul li:not(:first-child) {
+        display: none;
+    }
+
+    nav ul li.icon {
+        float: right;
+        display: block;
+    }
+
+    nav ul.responsive-menu {
+        position: relative;
+    }
+
+    nav ul.responsive-menu li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    nav ul.responsive-menu li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.header {
+    font-weight: bold;
+}
+
+select {
+    font-size: 1em;
+}
+
+header {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#currentRound {
+    margin: 0;
+}
